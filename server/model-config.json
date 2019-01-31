@@ -13,15 +13,15 @@
       "./mixins"
     ]
   },
-  "User": { "dataSource": "db" },
-  "AccessToken": { "dataSource": "db", "public": false },
-  "ACL": { "dataSource": "db", "public": false },
+  "User": { "dataSource": "MongoDB" },
+  "AccessToken": { "dataSource": "MongoDB", "public": false },
+  "ACL": { "dataSource": "MongoDB", "public": false },
   "RoleMapping": {
-    "dataSource": "db",
+    "dataSource": "MongoDB",
     "public": false,
     "options": { "strictObjectIDCoercion": true }
   },
-  "Role": { "dataSource": "db", "public": false },
+  "Role": { "dataSource": "MongoDB", "public": false },
   "player": { "dataSource": "MongoDB", "public": true },
   "team": { "dataSource": "MongoDB", "public": true }
 }
